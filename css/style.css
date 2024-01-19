@@ -16,6 +16,13 @@
 
 /* Colores */
 
+:root {
+  /* Mode 1 */
+  /* colors */
+  --blanco: #ffffff;
+  --morado: #ba5cff;
+}
+
 /* ******************************** */
 
 * {
@@ -67,39 +74,44 @@ header {
   height: 270px;
   flex-shrink: 0;
   border-radius: 270px;
-  border: 4px solid #BA5CFF;
+  border: 4px solid --morado;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-p{
-  color: #FFF;
-font-family: JetBrains Mono;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+p {
+  color: var(--blanco);
+  font-family: JetBrains Mono;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Con after creamos un circulo pequeño dentro de este */
-.borde-circulo::after{
+.borde-circulo::after {
   content: "";
   width: 30px;
   height: 30px;
-  background: #BA5CFF;
+  background: var(--morado);
   border-radius: 50%;
   z-index: 1;
 }
 
 @keyframes scaleAnimation {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
-  25%, 75% {
+
+  25%,
+  75% {
     transform: scale(8.8);
   }
+
   50% {
     transform: scale(8.8);
   }
@@ -109,22 +121,22 @@ line-height: normal;
   animation: scaleAnimation 15s linear infinite;
 }
 
-h2{
-  color: #FFF;
-font-family: JetBrains Mono;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+h2 {
+  color: var(--blanco);
+  font-family: JetBrains Mono;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.info{
-  color: #FFF;
-font-family: JetBrains Mono;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-width: 323px;
-margin-top: 40px;
+.info {
+  color: var(--blanco);
+  font-family: JetBrains Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 323px;
+  margin-top: 40px;
 }

@@ -118,7 +118,7 @@ p {
 }
 
 .borde-circulo.start-animation::after {
-  animation: scaleAnimation 15s linear infinite;
+  animation: scaleAnimation 10s linear infinite;
 }
 
 h2 {
